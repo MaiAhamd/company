@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>home appliances store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+        * {
+            font-family: 'Nunito', cursive;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: rgb(255, 255, 255);
+            z-index: 9999;
+            border: 0;
+            font-size: 20px !important;
+            line-height: 1.42857143 !important;
+            border-radius: 0;
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+        }
+
+        .navbar li a,
+        .navbar {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .navbar-fixed-top .navbar-collapse,
+        .navbar-static-top .navbar-collapse {
+            padding-right: 0;
+            padding-left: 0;
+            padding: 8px;
+        }
+
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: red !important;
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .navbar-brand {
+            padding: 0px 20px;
+            font-size: 25px;
+            float: right;
+        }
+
+        .bg-grey {
+            background-color: #f7f7f7;
+        }
+
+        .border {
+            border-radius: 5em;
+        }
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: #000000;
+            background: transparent;
+            border: 2px solid green;
+            cursor: pointer;
+            transition: ease-out 0.5s;
+            -webkit-transition: ease-out 0.5s;
+            -moz-transition: ease-out 0.5s;
+        }
+
+        .btn.btn-slide-9 {
+            border-radius: 10px;
+            border: 2px solid red;
+            box-shadow: inset 0 0 0 .5 red;
+            margin-bottom: 50px;
+        }
+
+        .btn.btn-slide-9:hover {
+            box-shadow: inset 0 0 200px 0 red;
+        }
+
+        .btn.btn-slide-9-footer {
+            border-radius: 10px;
+            border: 2px solid red;
+            box-shadow: inset 0 0 0 .5 red;
+            color: white;
+            margin-right: 30px;
+            margin-bottom: 50px;
+        }
+
+        .btn.btn-slide-9-footer:hover {
+            box-shadow: inset 0 0 200px 0 red;
+        }
+
+        .form-control {
+            height: 50px;
+            font-size: large;
+        }
+
+        .footer {
+            background-color: black;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .fa,
+        .fas {
+            font-weight: 1000px;
+            margin-right: 5px;
+            font-size: 20px;
+            color: #fac031;
+        }
+
+        .fa,
+        .far {
+            font-weight: 1000px;
+            margin-right: 5px;
+            font-size: 20px;
+            color: #fac031;
+        }
+
+        .header-img {
+            position: relative;
+            margin-top: 80px;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .h1,
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .h3 {
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        .margin {
+            margin: 30px 100px;
+        }
+
+        .margin1 {
+            margin-top: 200px;
+        }
+
+        .order-img {
+            margin-top: 0px;
+            margin-top: 20px;
+            width: 500px;
+            height: 350px;
+        }
+
+        .popular-img {
+            width: 550px;
+            height: 300px;
+        }
+
+        .reviews-img {
+            border: 0;
+            width: 120px;
+            border-radius: 5em;
+            margin-top: -60px;
+            border: solid 8px #ffffff;
+        }
+
+        .reviews-thumbnail {
+            background-color: black;
+            color: #ffffff;
+            margin-top: 0px;
+        }
+
+        .shadow {
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+            transition: box-shadow 0.5s;
+        }
+
+        .shadow:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+        .shadow1 {
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+            transition: box-shadow 0.5s;
+        }
+
+        .spisiality-img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .black {
+            color: black;
+        }
+
+        @media screen and (max-width:1200px) {
+
+            .col-sm-6 {
+                text-align: center;
+            }
+
+            .header-img {
+                width: 450px;
+                height: 500px;
+                text-align: center;
+                margin-top: 40px;
+
+            }
+
+            .order-img {
+                width: 325px;
+                height: 300px;
+                text-align: center;
+                margin-top: 10px;
+
+            }
+
+            .margin {
+                margin: 30px;
+            }
+
+            .margin1 {
+                margin-top: 100px;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .header-img {
+                width: 250px;
+                height: 250px;
+                text-align: center;
+                margin-top: 0px;
+
+            }
+        }
+
+        @media screen and (max-width:786px) {
+            .reviews-thumbnail {
+                background-color: black;
+                color: #ffffff;
+                margin-top: 70px;
+
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .order-img {
+                width: 225px;
+                height: 200px;
+                text-align: center;
+                margin-top: 10px;
+
+            }
+        }
+
+        @keyframes example {
+            from {
+                top: -20px;
+            }
+
+            25% {
+                top: 10px;
+            }
+
+            50% {
+                top: -20px;
+            }
+
+            75% {
+                top: 10px;
+            }
+
+            100% {
+                top: -20px;
+            }
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-offset="60" data-target=".navbar">
+
+    <nav class="navbar navbar-default  navbar-fixed-top navbar right">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#gallere">Gallere</a></li>
+
+                        <li><a href="#reviews">ىراء الزبائن</a></li>
+                        <li><a href="#order">اطلب الآن</a></li>
+                        <li><a href="#popular">الأكثر طلبا</a></li>
+                        <li><a href="#spisiality">تخصصنا</a></li>
+                        <li><a href="#home">الرئيسية</a></li>
+
+
+
+
+                        <li style="float:right; margin-right:-600px;" href="#myPage"><strong>
+                                فروج أبو علي</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--home-->
+    <div id="home" class="container-fluid bg-grey  ">
+        <div class="row margin">
+            <div class="col-md-6 margin1">
+                <p style="font-size: 50px; "><strong>Food Made With Love</strong></p>
+                <p style=" font-size: 18px; ">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas
+                    Accusamus
+                    Tempore Temporibus
+                    Rem Amet Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum Ipsam Itaque Impedit
+                    Incidunt
+                    Rem Quisquam Eos!</p>
+                <br>
+                <a class="btn btn-slide-9" href="">Order Now</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="header-img " src="header-img.PNG ">
+            </div>
+        </div>
+
+        <!--spisiality-->
+        <div id="spisiality" class="row text-center  margin ">
+            <h1><strong> Our <span class="red">Spisiality</span> </strong></h1>
+            <div class="col-sm-4">
+                <div class=" thumbnail">
+                    <img class="spisiality-img" src="s-1.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail ">
+                    <img class="spisiality-img" src="s-2.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail ">
+                    <img class="spisiality-img" src="s-3.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center margin">
+            <div class="col-sm-4">
+                <div class="thumbnail ">
+                    <img class="spisiality-img" src="s-4.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail ">
+                    <img class="spisiality-img" src="s-5.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img class="spisiality-img" src="s-6.PNG">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <p>Lorem Ipsum Dolor Sit, A Temporibus Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                        Voluptas
+                        Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+        </div>
+
+        <!--popular-->
+        <div id="popular" class="row text-center margin">
+            <h1><strong>Most <span class="red">popular</span> Food</strong></h1>
+            <div class="col-sm-4">
+                <div class="thumbnail shadow">
+                    <img src="p-1.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail shadow">
+                    <img src="p-2.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail shadow ">
+                    <img src="p-5.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center margin ">
+            <div class="col-sm-4">
+                <div class="thumbnail shadow">
+                    <img src="p-4.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail shadow">
+                    <img src="p-5.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail shadow">
+                    <img src="p-6.jpg" class="popular-img">
+                    <h3><strong>Tasty Burger</strong></h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <br>
+                    <a class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!--work -->
+        <div class="row text-center">
+            <h1><strong>How it <span class="red">Works</span></strong></h1>
+            <div class="col-sm-3 ">
+                <img src="step-1.jpg" style=" border-radius: 5em"><br><br>
+                <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas Accusamus Tempore Temporibus</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="step-2.jpg" style=" border-radius: 5em"><br><br>
+                <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas Accusamus Tempore Temporibus</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="step-3.jpg" style=" border-radius: 5em"><br><br>
+                <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas Accusamus Tempore Temporibus</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="step-4.jpg" style=" border-radius: 5em"><br><br>
+                <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas Accusamus Tempore Temporibus</p>
+            </div>
+        </div>
+        <br><br>
+
+        <!--Gallere-->
+        <div id="gallere" class="row text-center margin ">
+            <h1><strong>Our Food<span class="red"> Gallery</span></strong> </h1>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-1.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-2.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-3.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row text-center margin">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-4.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-5.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-6.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row text-center margin">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-7.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-8.jpg">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="g-9.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!--Reviews-->
+        <div id="reviews" class="row text-center margin">
+            <h1><strong>Our Customers<span class="red"> Reviews </span></strong></h1>
+            <br><br>
+            <div class="col-sm-4">
+                <div class="thumbnail reviews-thumbnail ">
+                    <img src="pic1.png " class="reviews-img">
+                    <h3>john trio</h3>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="far fa-star red"></i>
+                    <br><br>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.Lorem Ipsum Dolor Sit, Amet Consectetur
+                        Adipisicing ElitVoluptas Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail reviews-thumbnail ">
+                    <img src="pic2.png" class="reviews-img">
+                    <h3>john trio</h3>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="far fa-star red"></i>
+                    <br><br>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.Lorem Ipsum Dolor Sit, Amet Consectetur
+                        Adipisicing ElitVoluptas Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail reviews-thumbnail ">
+                    <img src="pic3.png" class="reviews-img">
+                    <h3>john trio</h3>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="fas fa-star red"></i>
+                    <i class="far fa-star red"></i>
+                    <br><br>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.Lorem Ipsum Dolor Sit, Amet Consectetur
+                        Adipisicing ElitVoluptas Accusamus Tempore Temporibus</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Order-->
+        <div id="order" class="row text-center margin ">
+            <h1><strong>Order<span class="red"> Now </span></strong> </h1>
+            <div class=" row thumbnail shadow1">
+                <div class="col-md-6 ">
+                    <img class="order-img " src="order-img.jpg">
+                </div>
+                <div class="col-md-6" style="margin-top:25px">
+                    <div class="row text-center">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control " type="text" placeholder="name">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" type="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" type="number" placeholder="phone">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" type="text" placeholder="location">
+                        </div>
+                    </div>
+                    <textarea class="form-control" rows="5">Comments you would like to add</textarea>
+                    <br>
+                    <a style="text-align: left; " class="btn btn-slide-9" href="">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center">
+        <a class="btn btn-slide-9-footer" href="">Facebook</a>
+        <a class="btn btn-slide-9-footer" href="">Twitter</a>
+        <a class="btn btn-slide-9-footer" href="">Instagram</a>
+        <a class="btn btn-slide-9-footer" href="">Pinterest</a>
+        <a class="btn btn-slide-9-footer" href="">Linkedin</a>
+        <h3 class="white">Created By <span class="red">Mai Ahmad</span> | All Rights Reserved!</h3>
+        <br><br>
+
+        <!--footer-->
+        <footer>
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up red"></span>
+            </a>
+            <p><strong><span class="red">back</span></strong></p>
+    </div>
+    </footer>
+
+    <!--script-->
+    <script>
+        $(document).ready(function () {
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        })
+    </script>
+
+</body>
+
+</html>
